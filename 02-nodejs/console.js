@@ -19,7 +19,7 @@ const app = (function(dataService) {
    */
   function displayMenu(menu) {
     console.log('*** Application Conférence ***');
-    for (let key in menu) {
+    for (const key in menu) {
       const id = parseInt(key) + 1;
       console.log(id + '. ' + menu[key].libelle);
     }
